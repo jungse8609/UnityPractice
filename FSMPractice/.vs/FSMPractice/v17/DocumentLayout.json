@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\assets\\scripts\\input\\gameinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\input\\gameinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|c:\\users\\jungs\\unity projects\\unitypractice\\fsmpractice\\assets\\scripts\\input\\inputreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\input\\inputreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{ebe3f1d5-feac-4131-bf03-0e85ffb89a89}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameInput.cs",
+              "DocumentMoniker": "C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\Assets\\Scripts\\Input\\GameInput.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Input\\GameInput.cs",
+              "ToolTip": "C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\Assets\\Scripts\\Input\\GameInput.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Input\\GameInput.cs",
+              "ViewState": "AQIAALMAAAAAAAAAAAAuwLgAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T11:04:39.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InputReader.cs",
+              "DocumentMoniker": "C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\Assets\\Scripts\\Input\\InputReader.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Input\\InputReader.cs",
+              "ToolTip": "C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\Assets\\Scripts\\Input\\InputReader.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Input\\InputReader.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T10:22:27.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\Assets\\Scripts\\Player\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Player.cs",
+              "ToolTip": "C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\Assets\\Scripts\\Player\\Player.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Player.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T10:01:56.421Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

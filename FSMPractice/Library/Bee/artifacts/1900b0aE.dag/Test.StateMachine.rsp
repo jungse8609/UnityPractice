@@ -116,7 +116,7 @@
 -define:ENABLE_TERRAIN
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
--define:ENABLE_LEGACY_INPUT_MANAGER
+-define:ENABLE_INPUT_SYSTEM
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
@@ -346,10 +346,12 @@
 -analyzer:"C:/Program Files/Unity/Editor/2022.3.7f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/StateMachine/Core/IStateComponent.cs"
 "Assets/Scripts/StateMachine/Core/State.cs"
+"Assets/Scripts/StateMachine/Core/StateAction.cs"
 "Assets/Scripts/StateMachine/Core/StateCondition.cs"
 "Assets/Scripts/StateMachine/Core/StateMachine.cs"
 "Assets/Scripts/StateMachine/Core/StateTransition.cs"
 "Assets/Scripts/StateMachine/ScriptableObjects/DescriptionSMActionBaseSO.cs"
+"Assets/Scripts/StateMachine/ScriptableObjects/StateActionSO.cs"
 "Assets/Scripts/StateMachine/ScriptableObjects/StateConditionSO.cs"
 "Assets/Scripts/StateMachine/ScriptableObjects/StateSO.cs"
 "Assets/Scripts/StateMachine/ScriptableObjects/TransitionTableSO.cs"

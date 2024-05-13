@@ -12,9 +12,17 @@ public class IsMovingCondition : Condition
 {
     private IsMovingConditionSO _originSO => (IsMovingConditionSO)base.OriginSO;
 
+    private Player _player;
+
+
+    public override void Awake(StateMachine stateMachine)
+    {
+        _player = stateMachine.GetComponent<Player>();
+    }
+
     protected override bool Statement()
     {
-        if (Input.GetMouseButton(0))
+        if (_player.movementInput != Vector3.zero)
             return true;
         return false;
     }
