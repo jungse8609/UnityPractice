@@ -37,8 +37,6 @@ namespace Test.StateMachine
             {
                 for (int i = 0; i < comps.Length; ++i)
                 {
-                    Debug.Log(comps.Length);
-                    Debug.Log(comps[i].ToString());
                     comps[i].OnStateExit();
                 }
             }

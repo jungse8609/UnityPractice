@@ -3,9 +3,10 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private InputReader _inputReader;
+    [SerializeField] private InputReader _inputReader = default;
 
-    [SerializeField] private Vector2 _inputVector;
+    private Vector2 _inputVector;
+    private float _previousSpeed;
 
     //These fields are read and manipulated by the StateMachine actions
     public Vector3 movementInput;
@@ -13,10 +14,11 @@ public class Player : MonoBehaviour
 
     private float speed = 2.0f;
 
+    public const float AIR_RESISTANCE = 5f;
+
     private void OnEnable()
     {
         _inputReader.MoveEvent += OnMovement;
-        Debug.Log("¸Ô¿©");
     }
 
     private void OnDisable()
@@ -31,14 +33,20 @@ public class Player : MonoBehaviour
 
     private void RecalculateMovement()
     {
-        transform.Translate(_inputVector);
+        float targetSpeed;
+
+        targetSpeed = Mathf.Clamp01(_inputVector.magnitude);
+        targetSpeed = Mathf.Lerp(_previousSpeed, targetSpeed, Time.deltaTime * 4.0f);
+
+        movementInput = _inputVector * targetSpeed;
+
+        _previousSpeed = targetSpeed;
     }
 
     /* --- Event Listener --- */
 
     private void OnMovement(Vector2 movement)
     {
-        Debug.Log("moveevent ¸®½¼");
         _inputVector = movement;
     }
 }

@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: AerialMovement
   m_EditorClassIdentifier: 
   description: 
+  _speed: 7
+  _acceleration: 30

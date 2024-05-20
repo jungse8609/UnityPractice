@@ -116,7 +116,7 @@
 -define:ENABLE_TERRAIN
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
--define:ENABLE_LEGACY_INPUT_MANAGER
+-define:ENABLE_INPUT_SYSTEM
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
@@ -335,6 +335,8 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Test.StateMachine.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Test.StateMachine.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.EditorCoroutines.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.InputSystem.ForUI.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.InputSystem.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.PlasticSCM.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Rider.Editor.ref.dll"
@@ -359,10 +361,17 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.UI.ref.dll"
 -analyzer:"C:/Users/USER/Unity/Editor/2022.3.7f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Users/USER/Unity/Editor/2022.3.7f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Scripts/BaseClass/DescriptionBaseSO.cs"
+"Assets/Scripts/EditorTools/Attributes/ReadOnlyAttribute/ReadOnlyAttribute.cs"
+"Assets/Scripts/Input/GameInput.cs"
+"Assets/Scripts/Input/InputReader.cs"
 "Assets/Scripts/Player/Player.cs"
 "Assets/Scripts/Player/StateMachine/Actions/AerialMovementActionSO.cs"
+"Assets/Scripts/Player/StateMachine/Actions/ApplyMovementVectorActionSO.cs"
 "Assets/Scripts/Player/StateMachine/Actions/IdleActionSO.cs"
 "Assets/Scripts/Player/StateMachine/Conditions/IsMovingContionSO.cs"
+"Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs"
+"Assets/Scripts/RuntimeAnchors/TransformAnchor.cs"
 -langversion:9.0
 
 /deterministic

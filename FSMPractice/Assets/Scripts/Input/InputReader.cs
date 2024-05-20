@@ -17,12 +17,12 @@ public class InputReader : ScriptableObject, GameInput.IGameplayActions
             _gameInput = new GameInput();
 
             _gameInput.Gameplay.SetCallbacks(this);
+            _gameInput.Gameplay.Enable();
         }
     }
 
     public void OnMovement(InputAction.CallbackContext context)
     {
-        Debug.Log("moveevent Input Reader");
         MoveEvent.Invoke(context.ReadValue<Vector2>());
     }
 }
