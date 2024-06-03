@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\assets\\scripts\\input\\gameinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\input\\gameinput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|c:\\users\\jungs\\unity projects\\unitypractice\\fsmpractice\\assets\\scripts\\player\\statemachine\\actions\\descendactionso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\statemachine\\actions\\descendactionso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|c:\\users\\jungs\\unity projects\\unitypractice\\fsmpractice\\assets\\scripts\\input\\inputreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\input\\inputreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|c:\\users\\jungs\\unity projects\\unitypractice\\fsmpractice\\assets\\scripts\\player\\statemachine\\actions\\ascendactionso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\statemachine\\actions\\ascendactionso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\assets\\scripts\\player\\statemachine\\actions\\aerialmovementactionso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\statemachine\\actions\\aerialmovementactionso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|c:\\users\\jungs\\unity projects\\unitypractice\\fsmpractice\\assets\\scripts\\player\\statemachine\\conditions\\ismovingcontionso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\statemachine\\conditions\\ismovingcontionso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\assets\\scripts\\player\\statemachine\\actions\\applymovementvectoractionso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\statemachine\\actions\\applymovementvectoractionso.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\assets\\scripts\\input\\inputreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6601037A-C51C-F06C-492C-7D81DE214B58}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\input\\inputreader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,29 +46,79 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GameInput.cs",
-              "DocumentMoniker": "C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\Assets\\Scripts\\Input\\GameInput.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Input\\GameInput.cs",
-              "ToolTip": "C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\Assets\\Scripts\\Input\\GameInput.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Input\\GameInput.cs",
-              "ViewState": "AQIAALMAAAAAAAAAAAAuwLgAAAAPAAAA",
+              "DocumentIndex": 4,
+              "Title": "IsMovingContionSO.cs",
+              "DocumentMoniker": "C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\Assets\\Scripts\\Player\\StateMachine\\Conditions\\IsMovingContionSO.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\StateMachine\\Conditions\\IsMovingContionSO.cs",
+              "ToolTip": "C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\Assets\\Scripts\\Player\\StateMachine\\Conditions\\IsMovingContionSO.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\StateMachine\\Conditions\\IsMovingContionSO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T11:04:39.075Z",
+              "WhenOpened": "2024-06-03T11:18:45.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DescendActionSO.cs",
+              "DocumentMoniker": "C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\Assets\\Scripts\\Player\\StateMachine\\Actions\\DescendActionSO.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\StateMachine\\Actions\\DescendActionSO.cs",
+              "ToolTip": "C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\Assets\\Scripts\\Player\\StateMachine\\Actions\\DescendActionSO.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\StateMachine\\Actions\\DescendActionSO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T11:12:08.914Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AscendActionSO.cs",
+              "DocumentMoniker": "C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\Assets\\Scripts\\Player\\StateMachine\\Actions\\AscendActionSO.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\StateMachine\\Actions\\AscendActionSO.cs",
+              "ToolTip": "C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\Assets\\Scripts\\Player\\StateMachine\\Actions\\AscendActionSO.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\StateMachine\\Actions\\AscendActionSO.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB8AAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T11:01:03.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplyMovementVectorActionSO.cs",
+              "DocumentMoniker": "C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\Assets\\Scripts\\Player\\StateMachine\\Actions\\ApplyMovementVectorActionSO.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\StateMachine\\Actions\\ApplyMovementVectorActionSO.cs",
+              "ToolTip": "C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\Assets\\Scripts\\Player\\StateMachine\\Actions\\ApplyMovementVectorActionSO.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\StateMachine\\Actions\\ApplyMovementVectorActionSO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T10:32:02.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AerialMovementActionSO.cs",
+              "DocumentMoniker": "C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\Assets\\Scripts\\Player\\StateMachine\\Actions\\AerialMovementActionSO.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\StateMachine\\Actions\\AerialMovementActionSO.cs",
+              "ToolTip": "C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\Assets\\Scripts\\Player\\StateMachine\\Actions\\AerialMovementActionSO.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\StateMachine\\Actions\\AerialMovementActionSO.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAEoAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-03T10:31:48.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "InputReader.cs",
               "DocumentMoniker": "C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\Assets\\Scripts\\Input\\InputReader.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Input\\InputReader.cs",
               "ToolTip": "C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\Assets\\Scripts\\Input\\InputReader.cs",
               "RelativeToolTip": "Assets\\Scripts\\Input\\InputReader.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAIAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACEAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-29T10:22:27.857Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-29T10:22:27.857Z"
             },
             {
               "$type": "Document",
@@ -62,7 +128,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Player.cs",
               "ToolTip": "C:\\Users\\jungs\\Unity Projects\\UnityPractice\\FSMPractice\\Assets\\Scripts\\Player\\Player.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\Player.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-13T10:01:56.421Z",
               "EditorCaption": ""

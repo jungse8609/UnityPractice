@@ -7,6 +7,8 @@ public class InputReader : ScriptableObject, GameInput.IGameplayActions
 {
     // GamePlay
     public event UnityAction<Vector2> MoveEvent = delegate { };
+    public event UnityAction JumpEvent = delegate { };
+    public event UnityAction JumpCancelEvent = delegate { };
 
     private GameInput _gameInput;
 
@@ -24,5 +26,13 @@ public class InputReader : ScriptableObject, GameInput.IGameplayActions
     public void OnMovement(InputAction.CallbackContext context)
     {
         MoveEvent.Invoke(context.ReadValue<Vector2>());
+    }
+
+    void GameInput.IGameplayActions.OnJump(InputAction.CallbackContext context)
+    {
+        if (context.phase == InputActionPhase.Performed)
+            JumpEvent.Invoke();
+        else if (context.phase == InputActionPhase.Canceled)
+            JumpCancelEvent.Invoke();
     }
 }

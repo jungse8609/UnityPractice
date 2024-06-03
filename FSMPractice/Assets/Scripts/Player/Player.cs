@@ -11,14 +11,22 @@ public class Player : MonoBehaviour
     //These fields are read and manipulated by the StateMachine actions
     public Vector3 movementInput;
     public Vector3 movementVector;
+    public bool jumpInput;
 
     private float speed = 2.0f;
 
     public const float AIR_RESISTANCE = 5f;
+    public const float MAX_FALL_SPEED = -50f;
+    public const float MAX_RISE_SPEED = 100f;
+    public const float GRAVITY_MULTIPLIER = 5f;
+    public const float GRAVITY_COMEBACK_MULTIPLIER = 0.03f;
+    public const float GRAVITY_DIVIDER = 0.6f;
 
     private void OnEnable()
     {
         _inputReader.MoveEvent += OnMovement;
+        _inputReader.JumpEvent += OnJumpInitiated;
+        _inputReader.JumpCancelEvent += OnJumpCancelInitiated;
     }
 
     private void OnDisable()
@@ -55,5 +63,15 @@ public class Player : MonoBehaviour
     {
         Debug.Log(movement);
         _inputVector = movement;
+    }
+
+    private void OnJumpInitiated()
+    {
+        jumpInput = true;
+    }
+
+    private void OnJumpCancelInitiated()
+    {
+        jumpInput = false;
     }
 }

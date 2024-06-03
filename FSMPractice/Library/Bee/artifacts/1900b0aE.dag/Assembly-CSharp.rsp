@@ -361,17 +361,21 @@
 -analyzer:"C:/Program Files/Unity/Editor/2022.3.7f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/BaseClass/DescriptionBaseSO.cs"
 "Assets/Scripts/EditorTools/Attributes/ReadOnlyAttribute/ReadOnlyAttribute.cs"
-"Assets/Scripts/Input/GameInput.cs"
 "Assets/Scripts/Input/InputReader.cs"
 "Assets/Scripts/Player/Player.cs"
 "Assets/Scripts/Player/StateMachine/Actions/AerialMovementActionSO.cs"
 "Assets/Scripts/Player/StateMachine/Actions/ApplyMovementVectorActionSO.cs"
+"Assets/Scripts/Player/StateMachine/Actions/AscendActionSO.cs"
+"Assets/Scripts/Player/StateMachine/Actions/DescendActionSO.cs"
 "Assets/Scripts/Player/StateMachine/Actions/GroundGravityActionSO.cs"
 "Assets/Scripts/Player/StateMachine/Actions/HorizontalMoveActionSO.cs"
 "Assets/Scripts/Player/StateMachine/Actions/IdleActionSO.cs"
+"Assets/Scripts/Player/StateMachine/Conditions/IsCharacterControllerGroundedConditionSO.cs"
+"Assets/Scripts/Player/StateMachine/Conditions/IsHoldingJumpConditionSO.cs"
 "Assets/Scripts/Player/StateMachine/Conditions/IsMovingContionSO.cs"
 "Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs"
 "Assets/Scripts/RuntimeAnchors/TransformAnchor.cs"
+"Assets/Setting/Input/GameInput.cs"
 -langversion:9.0
 
 /deterministic
