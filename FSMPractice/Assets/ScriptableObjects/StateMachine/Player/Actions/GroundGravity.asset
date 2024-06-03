@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474f9ee42bf83fe4e9ba80db8374b6d0, type: 3}
-  m_Name: ApplyMovementVectorAction
+  m_Script: {fileID: 11500000, guid: 0b24e90a93e1dde4caa32e6f43ee5240, type: 3}
+  m_Name: GroundGravity
   m_EditorClassIdentifier: 
   description: 
+  verticalPull: -5

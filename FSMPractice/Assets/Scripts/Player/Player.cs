@@ -5,7 +5,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private InputReader _inputReader = default;
 
-    private Vector2 _inputVector;
+    private Vector2 _inputVector; // _inputVector.x : x movement, _inputVector.y : z movement
     private float _previousSpeed;
 
     //These fields are read and manipulated by the StateMachine actions
@@ -34,11 +34,17 @@ public class Player : MonoBehaviour
     private void RecalculateMovement()
     {
         float targetSpeed;
+        Vector3 adjustedMovement;
+
+        adjustedMovement = new Vector3(_inputVector.x, 0.0f, _inputVector.y);
 
         targetSpeed = Mathf.Clamp01(_inputVector.magnitude);
         targetSpeed = Mathf.Lerp(_previousSpeed, targetSpeed, Time.deltaTime * 4.0f);
 
-        movementInput = _inputVector * targetSpeed;
+        if (_inputVector.sqrMagnitude == 0.0f)
+            adjustedMovement = transform.forward * (adjustedMovement.magnitude + .01f);
+
+        movementInput = adjustedMovement * targetSpeed;
 
         _previousSpeed = targetSpeed;
     }
@@ -47,6 +53,7 @@ public class Player : MonoBehaviour
 
     private void OnMovement(Vector2 movement)
     {
+        Debug.Log(movement);
         _inputVector = movement;
     }
 }

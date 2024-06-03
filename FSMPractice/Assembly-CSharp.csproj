@@ -59,16 +59,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\BaseClass\DescriptionBaseSO.cs" />
+    <Compile Include="Assets\Scripts\Player\StateMachine\Actions\GroundGravityActionSO.cs" />
     <Compile Include="Assets\Scripts\Input\GameInput.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\ApplyMovementVectorActionSO.cs" />
     <Compile Include="Assets\Scripts\Input\InputReader.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Conditions\IsMovingContionSO.cs" />
     <Compile Include="Assets\Scripts\EditorTools\Attributes\ReadOnlyAttribute\ReadOnlyAttribute.cs" />
-    <Compile Include="Assets\Scripts\Player\StateMachine\Actions\AerialMovementActionSO.cs" />
     <Compile Include="Assets\Scripts\RuntimeAnchors\TransformAnchor.cs" />
+    <Compile Include="Assets\Scripts\Player\StateMachine\Actions\AerialMovementActionSO.cs" />
     <Compile Include="Assets\Scripts\RuntimeAnchors\RuntimeAnchorBase.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\IdleActionSO.cs" />
+    <Compile Include="Assets\Scripts\Player\StateMachine\Actions\HorizontalMoveActionSO.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

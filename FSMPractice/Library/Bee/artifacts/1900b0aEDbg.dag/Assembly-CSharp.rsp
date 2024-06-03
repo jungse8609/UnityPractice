@@ -368,6 +368,8 @@
 "Assets/Scripts/Player/Player.cs"
 "Assets/Scripts/Player/StateMachine/Actions/AerialMovementActionSO.cs"
 "Assets/Scripts/Player/StateMachine/Actions/ApplyMovementVectorActionSO.cs"
+"Assets/Scripts/Player/StateMachine/Actions/GroundGravityActionSO.cs"
+"Assets/Scripts/Player/StateMachine/Actions/HorizontalMoveActionSO.cs"
 "Assets/Scripts/Player/StateMachine/Actions/IdleActionSO.cs"
 "Assets/Scripts/Player/StateMachine/Conditions/IsMovingContionSO.cs"
 "Assets/Scripts/RuntimeAnchors/RuntimeAnchorBase.cs"
