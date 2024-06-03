@@ -24,6 +24,7 @@ public class AerialMovementAction : StateAction
 
     public override void Awake(StateMachine stateMachine)
     {
+        Debug.Log("Aerial Move");
         _player = stateMachine.GetComponent<Player>();
     }
 
