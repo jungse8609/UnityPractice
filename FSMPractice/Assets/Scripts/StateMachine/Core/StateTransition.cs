@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 namespace Test.StateMachine
 {
     public class StateTransition : IStateComponent

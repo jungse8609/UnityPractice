@@ -42,17 +42,21 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\BaseClass\DescriptionBaseSO.cs" />
      <Compile Include="Assets\Scripts\Player\StateMachine\Actions\GroundGravityActionSO.cs" />
-     <Compile Include="Assets\Scripts\Input\GameInput.cs" />
+     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\JumpDescendingActionSO.cs" />
      <Compile Include="Assets\Scripts\Player\Player.cs" />
      <Compile Include="Assets\Scripts\Player\StateMachine\Actions\ApplyMovementVectorActionSO.cs" />
      <Compile Include="Assets\Scripts\Input\InputReader.cs" />
      <Compile Include="Assets\Scripts\Player\StateMachine\Conditions\IsMovingContionSO.cs" />
+     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\JumpAscendingActionSO.cs" />
      <Compile Include="Assets\Scripts\EditorTools\Attributes\ReadOnlyAttribute\ReadOnlyAttribute.cs" />
+     <Compile Include="Assets\Scripts\Player\StateMachine\Conditions\IsJumpPushConditionSO.cs" />
      <Compile Include="Assets\Scripts\RuntimeAnchors\TransformAnchor.cs" />
      <Compile Include="Assets\Scripts\Player\StateMachine\Actions\AerialMovementActionSO.cs" />
+     <Compile Include="Assets\Setting\Input\GameInput.cs" />
      <Compile Include="Assets\Scripts\RuntimeAnchors\RuntimeAnchorBase.cs" />
      <Compile Include="Assets\Scripts\Player\StateMachine\Actions\IdleActionSO.cs" />
      <Compile Include="Assets\Scripts\Player\StateMachine\Actions\HorizontalMoveActionSO.cs" />
+     <None Include="Assets\Scripts\Input\readme.txt" />
     <Reference Include="UnityEngine">
         <HintPath>C:\Program Files\Unity 2022.3.7f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

@@ -53,7 +53,7 @@ public class Player : MonoBehaviour
 
     private void OnMovement(Vector2 movement)
     {
-        Debug.Log(movement);
+        // Debug.Log(movement);
         _inputVector = movement;
     }
 }

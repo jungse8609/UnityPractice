@@ -6,7 +6,9 @@ using UnityEngine.InputSystem;
 public class InputReader : ScriptableObject, GameInput.IGameplayActions
 {
     // GamePlay
-    public event UnityAction<Vector2> MoveEvent = delegate { };
+    public event UnityAction<Vector2> MoveEvent = delegate {};
+    public event UnityAction<bool> JumpEvent = delegate {};
+    public event UnityAction<bool> SprintEvent = delegate {};
 
     private GameInput _gameInput;
 
@@ -24,5 +26,15 @@ public class InputReader : ScriptableObject, GameInput.IGameplayActions
     public void OnMovement(InputAction.CallbackContext context)
     {
         MoveEvent.Invoke(context.ReadValue<Vector2>());
+    }
+
+    public void OnJump(InputAction.CallbackContext context)
+    {
+        JumpEvent.Invoke(context.ReadValue<bool>());
+    }
+
+    public void OnSprint(InputAction.CallbackContext context)
+    {
+        JumpEvent.Invoke(context.ReadValue<bool>());
     }
 }
