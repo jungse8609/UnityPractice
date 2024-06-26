@@ -19,7 +19,7 @@ public class Player : MonoBehaviour
     public const float MAX_FALL_SPEED = -50f;
     public const float MAX_RISE_SPEED = 100f;
     public const float GRAVITY_MULTIPLIER = 5f;
-    public const float GRAVITY_COMEBACK_MULTIPLIER = 0.03f;
+    public const float GRAVITY_COMEBACK_MULTIPLIER = 0.06f;
     public const float GRAVITY_DIVIDER = 0.6f;
 
     private void OnEnable()

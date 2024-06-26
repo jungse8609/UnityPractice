@@ -10,7 +10,7 @@ public class #SCRIPTNAME# : StateActionSO
 
 public class #RUNTIMENAME# : StateAction
 {
-	protected new #SCRIPTNAME# OriginSO => (#SCRIPTNAME#)base.OriginSO;
+	protected new #SCRIPTNAME# _originSO => (#SCRIPTNAME#)base.OriginSO;
 
 	public override void Awake(StateMachine stateMachine)
 	{

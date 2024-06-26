@@ -59,15 +59,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Camera\CameraManager.cs" />
+    <Compile Include="Assets\Scripts\Player\StateMachine\Actions\RotateActionSO.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraZoomEffect.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\AscendActionSO.cs" />
     <Compile Include="Assets\Scripts\BaseClass\DescriptionBaseSO.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\GroundGravityActionSO.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
+    <Compile Include="Assets\Scripts\Player\StateMachine\Conditions\isPullingLightConditionSO.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\DescendActionSO.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Conditions\IsCharacterControllerGroundedConditionSO.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\ApplyMovementVectorActionSO.cs" />
     <Compile Include="Assets\Scripts\Input\InputReader.cs" />
+    <Compile Include="Assets\Scripts\Player\StateMachine\Conditions\TimeElapsedConditionSO.cs" />
+    <Compile Include="Assets\Scripts\Player\ZoneTriggerController.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Conditions\IsMovingContionSO.cs" />
     <Compile Include="Assets\Scripts\EditorTools\Attributes\ReadOnlyAttribute\ReadOnlyAttribute.cs" />
     <Compile Include="Assets\Scripts\RuntimeAnchors\TransformAnchor.cs" />
@@ -76,7 +80,9 @@
     <Compile Include="Assets\Scripts\RuntimeAnchors\RuntimeAnchorBase.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Conditions\IsHoldingJumpConditionSO.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\IdleActionSO.cs" />
+    <Compile Include="Assets\Scripts\Interaction\Interaction.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\HorizontalMoveActionSO.cs" />
+    <Compile Include="Assets\Scripts\Interaction\InteractionManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
