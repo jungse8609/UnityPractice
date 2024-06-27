@@ -11,38 +11,40 @@ public class InteractionManager : MonoBehaviour
     // Events for the different interaction types
     // Type 별로 OnTrigger로 처리해줘야해. Condition을 설정해 해당 state로 넘어갈 수 있게
 
-
     [ReadOnly] public InteractionType currentInteractionType;
+    [ReadOnly] public GameObject currentInteractiveObject;
+    [ReadOnly] public bool pushInput;
 
     private LinkedList<Interaction> _potentialInteractions = new LinkedList<Interaction>(); //To store the objects we the player could potentially interact with
 
     private void OnEnable()
     {
         _inputReader.PullEvent += OnPull;
-        _inputReader.PushEvent += OnPush;
+        _inputReader.PushEvent += OnPushInitiated;
+        _inputReader.PushCancelEvent += OnPushCancelInitiated;
     }
 
     private void OnPull()
     {
         if (_potentialInteractions.Count == 0)
         {
-            Debug.Log("There are no Interactable Objects in ZoneTrigger");
+            currentInteractionType = InteractionType.None;
+            currentInteractiveObject = null;
             return;
         }
 
         currentInteractionType = _potentialInteractions.First.Value.type;
-
-        switch (_potentialInteractions.First.Value.type)
-        {
-        case InteractionType.Light:
-            
-            break;
-        }
+        currentInteractiveObject = _potentialInteractions.First.Value.interactiveObject;
     }
 
-    private void OnPush()
+    private void OnPushInitiated()
     {
-        
+        pushInput = true;
+    }
+
+    private void OnPushCancelInitiated()
+    {
+        pushInput = false;
     }
 
     public void OnTriggerChangeDetected(bool entered, GameObject obj)

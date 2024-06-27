@@ -11,6 +11,7 @@ public class InputReader : ScriptableObject, GameInput.IGameplayActions
     public event UnityAction JumpCancelEvent = delegate { };
     public event UnityAction PullEvent = delegate { };
     public event UnityAction PushEvent = delegate { };
+    public event UnityAction PushCancelEvent = delegate { };
 
     private GameInput _gameInput;
 
@@ -46,7 +47,9 @@ public class InputReader : ScriptableObject, GameInput.IGameplayActions
 
     public void OnPush(InputAction.CallbackContext context)
     {
-        if (context.phase == InputActionPhase.Started)
-            PullEvent.Invoke();
+        if (context.phase == InputActionPhase.Performed)
+            PushEvent.Invoke();
+        else if (context.phase == InputActionPhase.Canceled)
+            PushCancelEvent.Invoke();
     }
 }
