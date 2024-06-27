@@ -35,9 +35,8 @@ public class InteractionManager : MonoBehaviour
         switch (_potentialInteractions.First.Value.type)
         {
         case InteractionType.Light:
-            Debug.Log("Pull Light Object");
+            
             break;
-
         }
     }
 
