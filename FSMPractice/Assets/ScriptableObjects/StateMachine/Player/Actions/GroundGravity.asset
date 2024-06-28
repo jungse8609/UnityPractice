@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b24e90a93e1dde4caa32e6f43ee5240, type: 3}
   m_Name: GroundGravity
   m_EditorClassIdentifier: 
-  description: 
+  description: "\uB545\uC5D0 \uBD99\uC5B4 \uB2E4\uB2D0 \uC218 \uC788\uB294 \uC911\uB825"
   verticalPull: -5

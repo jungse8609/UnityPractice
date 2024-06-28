@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb53bbe48e618ac41aee762f6d49756c, type: 3}
   m_Name: Rotate
   m_EditorClassIdentifier: 
-  description: 
+  description: "\uC9C4\uD589 \uBC29\uD5A5\uC73C\uB85C \uBAB8\uC744 \uD68C\uC804\uD558\uB294
+    \uC561\uC158"
   turnSmoothTime: 0.2

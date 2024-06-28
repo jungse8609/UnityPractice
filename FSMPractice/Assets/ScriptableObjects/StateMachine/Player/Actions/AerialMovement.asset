@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25d4bc5814420d34caf17e8ad0b00ad4, type: 3}
   m_Name: AerialMovement
   m_EditorClassIdentifier: 
-  description: 
+  description: "\uACF5\uC911\uC5D0\uC11C\uC758 \uC774\uB3D9 \uC561\uC158"
   _speed: 7
   _acceleration: 30

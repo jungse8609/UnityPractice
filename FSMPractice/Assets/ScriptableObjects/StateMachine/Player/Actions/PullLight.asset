@@ -12,4 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 266432edc0abe4a438140c0c4226eec1, type: 3}
   m_Name: PullLight
   m_EditorClassIdentifier: 
-  description: 
+  description: "\uB9C8\uC6B0\uC2A4 \uC88C\uD074\uB9AD \uAC00\uBCBC\uC6B4 \uC624\uBE0C\uC81D\uD2B8
+    \uC778\uB825 \uC561\uC158\n"
+  floorLayerMask:
+    serializedVersion: 2
+    m_Bits: 64

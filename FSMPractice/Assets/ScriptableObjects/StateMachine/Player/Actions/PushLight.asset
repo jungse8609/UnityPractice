@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcfb9a3625787ea41beed74071d56d4a, type: 3}
   m_Name: PushLight
   m_EditorClassIdentifier: 
-  description: 
-  pushForce: 5
-  pushHeight: 0.5
+  description: "\uB9C8\uC6B0\uC2A4 \uC6B0\uD074\uB9AD \uAC00\uBCBC\uC6B4 \uC624\uBE0C\uC81D\uD2B8
+    \uCC99\uB825 \uC561\uC158"
+  pushForce: 10
+  pushHeight: 1
+  floorLayerMask:
+    serializedVersion: 2
+    m_Bits: 64

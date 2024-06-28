@@ -7,6 +7,7 @@ public class PushLightActionSO : StateActionSO<PushLightAction>
 {
 	public float pushForce = 5.0f;
 	public float pushHeight = 0.5f;
+	public LayerMask floorLayerMask;
 }
 
 public class PushLightAction : StateAction
@@ -26,18 +27,9 @@ public class PushLightAction : StateAction
 		{
             _interactiveObjectRigidbody = _interactionManager.currentInteractiveObject.GetComponent<Rigidbody>();
 
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit))
-            {
-                Vector3 mousePosition = hit.point;
-                Vector3 throwDirection = (mousePosition - _interactionManager.transform.position).normalized;
-                throwDirection.y = _originSO.pushHeight;
-
-                _interactiveObjectRigidbody.isKinematic = false;
-                _interactiveObjectRigidbody.velocity = throwDirection * _originSO.pushForce;
-            }
+            // Init Position to Player position and Add
+            _interactiveObjectRigidbody.isKinematic = false;
+            _interactiveObjectRigidbody.velocity = _interactiveObjectRigidbody.transform.forward * _originSO.pushForce;
         }
 		else
 		{

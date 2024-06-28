@@ -28,8 +28,6 @@ public class InteractionManager : MonoBehaviour
     {
         if (_potentialInteractions.Count == 0)
         {
-            currentInteractionType = InteractionType.None;
-            currentInteractiveObject = null;
             return;
         }
 
