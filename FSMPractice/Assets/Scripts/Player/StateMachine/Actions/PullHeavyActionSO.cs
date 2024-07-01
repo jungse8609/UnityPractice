@@ -17,7 +17,6 @@ public class PullHeavyAction : StateAction
 
     private Rigidbody _interactiveObjectRigidbody;
     private Vector3 _offset;
-    private Vector3 _previousPlayerPosition;
 
     public override void Awake(StateMachine stateMachine)
     {
@@ -28,8 +27,6 @@ public class PullHeavyAction : StateAction
     public override void OnStateEnter()
     {
         _interactiveObjectRigidbody = _interactionManager.currentInteractiveObject.GetComponent<Rigidbody>();
-
-        _previousPlayerPosition = _player.transform.position;
 
         // Freeze rotation to prevent the box from rolling
         _interactiveObjectRigidbody.constraints = RigidbodyConstraints.FreezeRotation;

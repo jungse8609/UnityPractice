@@ -10,6 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 551bb27b9ce5bc446b79cc0a9135b4ef, type: 3}
-  m_Name: OnWall
+  m_Name: PullWall
   m_EditorClassIdentifier: 
-  _actions: []
+  _actions:
+  - {fileID: 11400000, guid: bc938bcec1deb1642b910af8972ec66a, type: 2}
