@@ -12,9 +12,9 @@ namespace Test.StateMachine.ScriptableObjects
 
         internal State GetInitialState(StateMachine stateMachine)
         {
-            var states = new List<State>(); // FromStatesµéÀ» ÀúÀå
+            var states = new List<State>(); // FromStatesï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             var transitions = new List<StateTransition>(); // 
-            var createdInstances = new Dictionary<ScriptableObject, object>(); // ¸¸µé¾îÁø Instances ÀúÀå¿ëµµ(Stateµé)
+            var createdInstances = new Dictionary<ScriptableObject, object>(); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Instances ï¿½ï¿½ï¿½ï¿½ëµµ(Stateï¿½ï¿½)
 
             var fromStates = _transitions.GroupBy(transition => transition.FromState);
 
@@ -23,11 +23,11 @@ namespace Test.StateMachine.ScriptableObjects
                 if (fromState.Key == null)
                     throw new ArgumentNullException(nameof(fromState.Key), $"TransitionTable: {name}");
 
-                // ¸¸¾à fromState°¡ Dictionary¿¡ ÀúÀåÀÌ ¾ÈµÇ¾î ÀÖÀ¸¸é »õ·Î State ¸¸µé¾î¼­ Ãß°¡ÇØÁÜ
+                // ï¿½ï¿½ï¿½ï¿½ fromStateï¿½ï¿½ Dictionaryï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ÈµÇ¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ State ï¿½ï¿½ï¿½ï¿½î¼­ ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½
                 var state = fromState.Key.GetState(stateMachine, createdInstances);
                 states.Add(state);
 
-                // FromState¿¡ ´ëÇÑ ¸ðµç ToStatesµé·ÎÀÇ TrasitionsÀ» »Ì¾Æ³»´Â °úÁ¤
+                // FromStateï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ToStatesï¿½ï¿½ï¿½ï¿½ï¿½ Trasitionsï¿½ï¿½ ï¿½Ì¾Æ³ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
                 transitions.Clear();
                 foreach (var transitionItem in fromState)
                 {
@@ -52,14 +52,14 @@ namespace Test.StateMachine.ScriptableObjects
             out StateCondition[] conditions,
             out int[] resultGroups)
         {
-            int count = conditionUsages.Length; // from ¿¡¼­ to ·Î °¡´Â conditions ÀÇ ¼ö
+            int count = conditionUsages.Length; // from ï¿½ï¿½ï¿½ï¿½ to ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ conditions ï¿½ï¿½ ï¿½ï¿½
 
-            // ÇÑ transition¿¡ ´ëÇÑ conditionsµéÀ» ¸ðµÎ »Ì¾Æ³»´Â °úÁ¤
+            // ï¿½ï¿½ transitionï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ conditionsï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ì¾Æ³ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             conditions = new StateCondition[count];
             for (int i = 0; i < count; i++)
                 conditions[i] = conditionUsages[i].Condition.GetCondition(stateMachine, conditionUsages[i].ExpectedResult == Result.True, createdInstances);
 
-            // ÀÌ°Å´Â ¹¹Áö?? resultGroupsListÀÇ Á¤Ã¼°¡ ¹¹³Æ ¸»ÀÌ¾ß !!!!!
+            // ï¿½Ì°Å´ï¿½ ï¿½ï¿½ï¿½ï¿½?? resultGroupsListï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¾ï¿½ !!!!!
             List<int> resultGroupsList = new List<int>();
             for (int i = 0; i < count; i++)
             {
