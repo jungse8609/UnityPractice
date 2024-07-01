@@ -8,6 +8,7 @@ namespace Test.StateMachine
 		protected StateActionSO OriginSO => _originSO;
 
 		public abstract void OnUpdate();
+		public virtual void OnFixedUpdate() { }
 		public virtual void Awake(StateMachine stateMachine) { }
 		public virtual void OnStateEnter() { }
 		public virtual void OnStateExit() { }

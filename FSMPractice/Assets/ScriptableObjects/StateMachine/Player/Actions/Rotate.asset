@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: "\uC9C4\uD589 \uBC29\uD5A5\uC73C\uB85C \uBAB8\uC744 \uD68C\uC804\uD558\uB294
     \uC561\uC158"
-  turnSmoothTime: 0.2
+  turnSmoothTime: 0.1

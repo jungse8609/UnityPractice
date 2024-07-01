@@ -58,16 +58,19 @@
     <Analyzer Include="C:\Users\USER\Unity\Editor\2022.3.7f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Player\StateMachine\Conditions\isPushingLightConditionSO.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraManager.cs" />
+    <Compile Include="Assets\Scripts\Player\StateMachine\Actions\PullHeavyActionSO.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\RotateActionSO.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraZoomEffect.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\PullLightActionSO.cs" />
+    <Compile Include="Assets\Scripts\Player\StateMachine\Conditions\isPushingConditionSO.cs" />
+    <Compile Include="Assets\Scripts\Player\StateMachine\Conditions\isPullingHeavyConditionSO.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\AscendActionSO.cs" />
     <Compile Include="Assets\Scripts\BaseClass\DescriptionBaseSO.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\GroundGravityActionSO.cs" />
     <Compile Include="Assets\Scripts\Player\Player.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Conditions\isPullingLightConditionSO.cs" />
+    <Compile Include="Assets\Scripts\Player\StateMachine\Actions\AnimatorParameterActionSO.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\DescendActionSO.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Conditions\IsCharacterControllerGroundedConditionSO.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\ApplyMovementVectorActionSO.cs" />
@@ -80,6 +83,7 @@
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\AerialMovementActionSO.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\PushLightActionSO.cs" />
     <Compile Include="Assets\Setting\Input\GameInput.cs" />
+    <Compile Include="Assets\Scripts\Player\StateMachine\Actions\PushHeavyActionSO.cs" />
     <Compile Include="Assets\Scripts\RuntimeAnchors\RuntimeAnchorBase.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Conditions\IsHoldingJumpConditionSO.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\IdleActionSO.cs" />

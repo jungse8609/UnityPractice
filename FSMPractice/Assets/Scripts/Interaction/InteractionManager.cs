@@ -58,6 +58,7 @@ public class InteractionManager : MonoBehaviour
         Interaction newPotentialInteraction = new Interaction(InteractionType.None, obj);
 
         if (obj.CompareTag("Light")) newPotentialInteraction.type = InteractionType.Light;
+        else if (obj.CompareTag("Heavy")) newPotentialInteraction.type = InteractionType.Heavy;
 
 
         if (newPotentialInteraction.type != InteractionType.None)

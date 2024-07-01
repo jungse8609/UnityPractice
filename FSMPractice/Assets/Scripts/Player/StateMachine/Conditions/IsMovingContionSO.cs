@@ -22,9 +22,9 @@ public class IsMovingCondition : Condition
 
     protected override bool Statement()
     {
-        if (_player.movementInput != Vector3.zero)
-            return true;
-        return false;
+        Vector3 movementVector = _player.movementInput;
+        movementVector.y = 0;
+        return movementVector.sqrMagnitude > _originSO.treshold;        
     }
 }
 
