@@ -18,6 +18,11 @@ public class VerticalMoveAction : StateAction
         _player = stateMachine.GetComponent<Player>();
     }
 
+    public override void OnStateEnter()
+    {
+        
+    }
+
     public override void OnUpdate()
     {
         _player.movementVector.y = _player.movementInput.z * _originSO.speed;

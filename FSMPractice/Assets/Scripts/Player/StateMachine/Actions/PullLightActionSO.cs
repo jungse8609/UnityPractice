@@ -5,7 +5,7 @@ using Test.StateMachine.ScriptableObjects;
 [CreateAssetMenu(fileName = "PullLightAction", menuName = "State Machines/Actions/PullLightAction")]
 public class PullLightActionSO : StateActionSO<PullLightAction> 
 {
-    public LayerMask floorLayerMask;
+    public LayerMask mouseDetectingLayerMask;
 }
 
 public class PullLightAction : StateAction
@@ -25,7 +25,7 @@ public class PullLightAction : StateAction
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, Mathf.Infinity, _originSO.floorLayerMask))
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, _originSO.mouseDetectingLayerMask))
         {
             Vector3 mousePosition = hit.point;
             mousePosition.y = _player.transform.position.y;

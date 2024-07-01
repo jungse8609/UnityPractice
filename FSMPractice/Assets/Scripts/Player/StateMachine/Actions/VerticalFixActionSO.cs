@@ -18,9 +18,13 @@ public class VerticalFixAction : StateAction
         _player = stateMachine.GetComponent<Player>();
     }
 
+    public override void OnStateEnter()
+    {
+        
+    }
+
     public override void OnUpdate()
     {
-        Debug.Log("Vertical Fix");
         _player.movementVector.y = 0.0f;
     }
 }

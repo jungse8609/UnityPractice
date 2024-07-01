@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: PushWall
   m_EditorClassIdentifier: 
   _actions:
-  - {fileID: 11400000, guid: 180f07e01976dbb4daff178b50436803, type: 2}
+  - {fileID: 11400000, guid: b6acd7a654c575a4db79b6a7b3f2f056, type: 2}

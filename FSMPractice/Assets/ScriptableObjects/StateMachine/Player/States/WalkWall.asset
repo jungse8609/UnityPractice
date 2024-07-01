@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 551bb27b9ce5bc446b79cc0a9135b4ef, type: 3}
-  m_Name: WallIdle
+  m_Name: WalkWall
   m_EditorClassIdentifier: 
   _actions:
-  - {fileID: 11400000, guid: d26916652781f604f869cef065585f29, type: 2}
+  - {fileID: 11400000, guid: 56a3292d71ccde047a86450cfd8e2eae, type: 2}
+  - {fileID: 11400000, guid: 5bde09847cdb4fa49bbc30ed70326dc1, type: 2}

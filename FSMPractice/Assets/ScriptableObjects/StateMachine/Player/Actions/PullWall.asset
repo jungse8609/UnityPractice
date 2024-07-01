@@ -13,6 +13,3 @@ MonoBehaviour:
   m_Name: PullWall
   m_EditorClassIdentifier: 
   description: 
-  floorLayerMask:
-    serializedVersion: 2
-    m_Bits: 128

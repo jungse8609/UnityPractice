@@ -9,7 +9,6 @@ public class InteractionManager : MonoBehaviour
     [SerializeField] private InputReader _inputReader = default;
 
     // Events for the different interaction types
-    // Type ���� OnTrigger�� ó���������. Condition�� ������ �ش� state�� �Ѿ �� �ְ�
 
     [ReadOnly] public InteractionType currentInteractionType;
     [ReadOnly] public GameObject currentInteractiveObject;
@@ -59,7 +58,7 @@ public class InteractionManager : MonoBehaviour
 
         if (obj.CompareTag("Light")) newPotentialInteraction.type = InteractionType.Light;
         else if (obj.CompareTag("Heavy")) newPotentialInteraction.type = InteractionType.Heavy;
-
+        else if (obj.CompareTag("Wall")) newPotentialInteraction.type = InteractionType.Wall;
 
         if (newPotentialInteraction.type != InteractionType.None)
         {
