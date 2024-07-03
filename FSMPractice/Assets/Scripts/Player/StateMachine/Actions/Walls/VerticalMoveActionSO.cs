@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using Test.StateMachine;
 using Test.StateMachine.ScriptableObjects;
 
@@ -6,20 +6,26 @@ using Test.StateMachine.ScriptableObjects;
 public class VerticalMoveActionSO : StateActionSO<VerticalMoveAction>
 {
 	public float speed;
+    public LayerMask floorLayerMask;
+
 }
 
 public class VerticalMoveAction : StateAction
 {
 	private VerticalMoveActionSO _originSO => (VerticalMoveActionSO)base.OriginSO;
     private Player _player;
+    private Transform _transform;
+
 
     public override void Awake(StateMachine stateMachine)
     {
         _player = stateMachine.GetComponent<Player>();
+        _transform = stateMachine.GetComponent<Transform>();
     }
 
     public override void OnUpdate()
     {
-        _player.movementVector.y = _player.movementInput.z * _originSO.speed;
+        _player.movementVector = _player.transform.forward * -_player.movementInput.x * _originSO.speed
+                               + _player.transform.right * _player.movementInput.z * _originSO.speed;
     }
 }

@@ -24,7 +24,6 @@ public class IsBoundOfWallCondition : Condition
 		float ymin = wall.GetComponent<Collider>().bounds.min.y;
 		float ymax = wall.GetComponent<Collider>().bounds.max.y;
 		float playerY = _player.transform.position.y;
-		// Debug.Log("player: " + playerY + " min:" + ymin + " max:" + ymax + "\nboundary:" + (playerY < ymin && playerY > ymax));
 
 		if (playerY < ymin || playerY > ymax) {
 			Debug.Log("boundary over");

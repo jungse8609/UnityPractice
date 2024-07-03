@@ -13,8 +13,4 @@ MonoBehaviour:
   m_Name: PushWall
   m_EditorClassIdentifier: 
   description: "\uB9C8\uC6B0\uC2A4 \uC6B0\uD074\uB9AD \uBCBD \uCC99\uB825 \uC561\uC158\n"
-  pushForce: 3
-  pushHeight: 0.9
-  floorLayerMask:
-    serializedVersion: 2
-    m_Bits: 0
+  pushForce: 10

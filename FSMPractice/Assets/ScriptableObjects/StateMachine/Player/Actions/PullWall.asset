@@ -15,4 +15,4 @@ MonoBehaviour:
   description: "\uB9C8\uC6B0\uC2A4 \uC88C\uD074\uB9AD \uBCBD \uC778\uB825 \uC561\uC158"
   floorLayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64

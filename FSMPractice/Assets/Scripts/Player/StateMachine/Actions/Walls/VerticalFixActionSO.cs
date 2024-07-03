@@ -20,7 +20,6 @@ public class VerticalFixAction : StateAction
 
     public override void OnUpdate()
     {
-        Debug.Log("Vertical Fix");
         _player.movementVector.y = 0.0f;
     }
 }
