@@ -17,3 +17,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   moveSpeed: 2
+  m_Script: {fileID: 11500000, guid: 3d4fa183894f0c04ea3777fba051d347, type: 3}
+  m_Name: PullWall
+  m_EditorClassIdentifier: 
+  description: "\uB9C8\uC6B0\uC2A4 \uC88C\uD074\uB9AD \uBCBD \uC778\uB825 \uC561\uC158"
+  floorLayerMask:
+    serializedVersion: 2
+    m_Bits: 0

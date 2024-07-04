@@ -838,13 +838,13 @@
       <Project>{6601037A-C51C-F06C-492C-7D81DE214B58}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
-    <ProjectReference Include="Test.StateMachine.Editor.csproj">
-      <Project>{93A63D14-D941-7D7F-2925-0593D13C3F0E}</Project>
-      <Name>Test.StateMachine.Editor</Name>
+    <ProjectReference Include="Pudding.StateMachine.Editor.csproj">
+      <Project>{34621B57-3587-823B-FB19-248EA87B393F}</Project>
+      <Name>Pudding.StateMachine.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Test.StateMachine.csproj">
-      <Project>{9B7812C5-6836-3074-CAAD-FCBAE9D827C3}</Project>
-      <Name>Test.StateMachine</Name>
+    <ProjectReference Include="Pudding.StateMachine.csproj">
+      <Project>{C3CC2CF7-B6D4-A486-2A7E-6E6BB112F742}</Project>
+      <Name>Pudding.StateMachine</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

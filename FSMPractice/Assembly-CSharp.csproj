@@ -64,6 +64,8 @@
     <Compile Include="Assets\Scripts\Camera\CameraZoomEffect.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\PullLightActionSO.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Conditions\isPushingConditionSO.cs" />
+    <Compile Include="Assets\Scripts\RopeTest\PullRopeActionSO.cs" />
+    <Compile Include="Assets\Scripts\Player\StateMachine\Conditions\IsBoundOfWallConditionSO.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Conditions\isPullingHeavyConditionSO.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\AscendActionSO.cs" />
     <Compile Include="Assets\Scripts\BaseClass\DescriptionBaseSO.cs" />
@@ -77,15 +79,24 @@
     <Compile Include="Assets\Scripts\Input\InputReader.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Conditions\TimeElapsedConditionSO.cs" />
     <Compile Include="Assets\Scripts\Player\ZoneTriggerController.cs" />
+    <Compile Include="Assets\Scripts\Interaction\Brokable.cs" />
+    <Compile Include="Assets\Scripts\Player\StateMachine\Actions\PushWallActionSO.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Conditions\IsMovingContionSO.cs" />
+    <Compile Include="Assets\Scripts\Player\StateMachine\Actions\VerticalMoveActionSO.cs" />
     <Compile Include="Assets\Scripts\EditorTools\Attributes\ReadOnlyAttribute\ReadOnlyAttribute.cs" />
+    <Compile Include="Assets\Scripts\RopeTest\RopeSwing.cs" />
+    <Compile Include="Assets\Scripts\RopeTest\RopeSegment.cs" />
     <Compile Include="Assets\Scripts\RuntimeAnchors\TransformAnchor.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\AerialMovementActionSO.cs" />
+    <Compile Include="Assets\Scripts\Player\StateMachine\Actions\VerticalFixActionSO.cs" />
+    <Compile Include="Assets\Scripts\Player\StateMachine\Actions\PullWallActionSO.cs" />
+    <Compile Include="Assets\Scripts\Player\StateMachine\Conditions\isPushingWallConditionSO.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\PushLightActionSO.cs" />
     <Compile Include="Assets\Setting\Input\GameInput.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\PushHeavyActionSO.cs" />
     <Compile Include="Assets\Scripts\RuntimeAnchors\RuntimeAnchorBase.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Conditions\IsHoldingJumpConditionSO.cs" />
+    <Compile Include="Assets\Scripts\Player\StateMachine\Conditions\isPullingWallConditionSO.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\IdleActionSO.cs" />
     <Compile Include="Assets\Scripts\Interaction\Interaction.cs" />
     <Compile Include="Assets\Scripts\Player\StateMachine\Actions\HorizontalMoveActionSO.cs" />
@@ -811,13 +822,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Test.StateMachine.Editor.csproj">
-      <Project>{93A63D14-D941-7D7F-2925-0593D13C3F0E}</Project>
-      <Name>Test.StateMachine.Editor</Name>
+    <ProjectReference Include="Pudding.StateMachine.Editor.csproj">
+      <Project>{34621B57-3587-823B-FB19-248EA87B393F}</Project>
+      <Name>Pudding.StateMachine.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Test.StateMachine.csproj">
-      <Project>{9B7812C5-6836-3074-CAAD-FCBAE9D827C3}</Project>
-      <Name>Test.StateMachine</Name>
+    <ProjectReference Include="Pudding.StateMachine.csproj">
+      <Project>{C3CC2CF7-B6D4-A486-2A7E-6E6BB112F742}</Project>
+      <Name>Pudding.StateMachine</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

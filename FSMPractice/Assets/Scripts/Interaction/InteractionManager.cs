@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum InteractionType { None = 0, Light, Heavy, Wall };
+public enum InteractionType { None = 0, Light, Heavy, Wall, Stickable, Rope };
 
 public class InteractionManager : MonoBehaviour
 {
     [SerializeField] private InputReader _inputReader = default;
 
     // Events for the different interaction types
-    // Type 별로 OnTrigger로 처리해줘야해. Condition을 설정해 해당 state로 넘어갈 수 있게
 
     [ReadOnly] public InteractionType currentInteractionType;
     [ReadOnly] public GameObject currentInteractiveObject;
@@ -59,7 +58,9 @@ public class InteractionManager : MonoBehaviour
 
         if (obj.CompareTag("Light")) newPotentialInteraction.type = InteractionType.Light;
         else if (obj.CompareTag("Heavy")) newPotentialInteraction.type = InteractionType.Heavy;
-
+        else if (obj.CompareTag("Wall")) newPotentialInteraction.type = InteractionType.Wall;
+        //else if (obj.CompareTag("Stickable")) newPotentialInteraction.type = InteractionType.Stickable;
+        //else if (obj.CompareTag("Rope")) newPotentialInteraction.type = InteractionType.Rope;
 
         if (newPotentialInteraction.type != InteractionType.None)
         {
