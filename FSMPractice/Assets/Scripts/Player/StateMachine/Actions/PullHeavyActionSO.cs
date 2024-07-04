@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
-using Pudding.StateMachine;
-using Pudding.StateMachine.ScriptableObjects;
+using Test.StateMachine;
+using Test.StateMachine.ScriptableObjects;
 
 [CreateAssetMenu(fileName = "PullHeavyAction", menuName = "State Machines/Actions/Pull Heavy Action")]
 public class PullHeavyActionSO : StateActionSO<PullHeavyAction>
@@ -17,6 +17,7 @@ public class PullHeavyAction : StateAction
 
     private Rigidbody _interactiveObjectRigidbody;
     private Vector3 _offset;
+    private Vector3 _previousPlayerPosition;
 
     public override void Awake(StateMachine stateMachine)
     {
@@ -27,6 +28,8 @@ public class PullHeavyAction : StateAction
     public override void OnStateEnter()
     {
         _interactiveObjectRigidbody = _interactionManager.currentInteractiveObject.GetComponent<Rigidbody>();
+
+        _previousPlayerPosition = _player.transform.position;
 
         // Freeze rotation to prevent the box from rolling
         _interactiveObjectRigidbody.constraints = RigidbodyConstraints.FreezeRotation;
@@ -41,33 +44,6 @@ public class PullHeavyAction : StateAction
                 _interactionManager.currentInteractiveObject.transform.position.x - distance,
                 _player.transform.position.y,
                 _interactionManager.currentInteractiveObject.transform.position.z
-            );
-            _offset = _interactionManager.currentInteractiveObject.transform.position - _player.transform.position;
-        }
-        else if (-distanceVector.x >= interactiveObjectSize / 2) // 오에서 잡음
-        {
-            _player.transform.position = new Vector3(
-                _interactionManager.currentInteractiveObject.transform.position.x + distance,
-                _player.transform.position.y,
-                _interactionManager.currentInteractiveObject.transform.position.z
-            );
-            _offset = _interactionManager.currentInteractiveObject.transform.position - _player.transform.position;
-        }
-        else if (distanceVector.z >= interactiveObjectSize / 2) // 뒤에서 잡음
-        {
-            _player.transform.position = new Vector3(
-                _interactionManager.currentInteractiveObject.transform.position.x,
-                _player.transform.position.y,
-                _interactionManager.currentInteractiveObject.transform.position.z - distance
-            );
-            _offset = _interactionManager.currentInteractiveObject.transform.position - _player.transform.position;
-        }
-        else if (-distanceVector.z >= interactiveObjectSize / 2) // 정면에서 잡음
-        {
-            _player.transform.position = new Vector3(
-                _interactionManager.currentInteractiveObject.transform.position.x,
-                _player.transform.position.y,
-                _interactionManager.currentInteractiveObject.transform.position.z + distance
             );
             _offset = _interactionManager.currentInteractiveObject.transform.position - _player.transform.position;
         }

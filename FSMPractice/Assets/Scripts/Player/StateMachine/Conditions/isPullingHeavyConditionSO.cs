@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
-using Pudding.StateMachine;
-using Pudding.StateMachine.ScriptableObjects;
+using Test.StateMachine;
+using Test.StateMachine.ScriptableObjects;
 
 [CreateAssetMenu(fileName = "isPullingHeavyCondition", menuName = "State Machines/Conditions/is Pulling Heavy Condition")]
 public class isPullingHeavyConditionSO : StateConditionSO<isPullingHeavyCondition> { }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace Pudding.StateMachine.ScriptableObjects
+namespace Test.StateMachine.ScriptableObjects
 {
     [CreateAssetMenu(fileName = "NewTransitionTable", menuName = "State Machines/Transition Table")]
     public class TransitionTableSO : ScriptableObject
@@ -12,9 +12,9 @@ namespace Pudding.StateMachine.ScriptableObjects
 
         internal State GetInitialState(StateMachine stateMachine)
         {
-            var states = new List<State>(); // FromStatesï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+            var states = new List<State>(); // FromStatesµéÀ» ÀúÀå
             var transitions = new List<StateTransition>(); // 
-            var createdInstances = new Dictionary<ScriptableObject, object>(); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Instances ï¿½ï¿½ï¿½ï¿½ëµµ(Stateï¿½ï¿½)
+            var createdInstances = new Dictionary<ScriptableObject, object>(); // ¸¸µé¾îÁø Instances ÀúÀå¿ëµµ(Stateµé)
 
             var fromStates = _transitions.GroupBy(transition => transition.FromState);
 
@@ -23,11 +23,11 @@ namespace Pudding.StateMachine.ScriptableObjects
                 if (fromState.Key == null)
                     throw new ArgumentNullException(nameof(fromState.Key), $"TransitionTable: {name}");
 
-                // ï¿½ï¿½ï¿½ï¿½ fromStateï¿½ï¿½ Dictionaryï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ÈµÇ¾ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ State ï¿½ï¿½ï¿½ï¿½î¼­ ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½
+                // ¸¸¾à fromState°¡ Dictionary¿¡ ÀúÀåÀÌ ¾ÈµÇ¾î ÀÖÀ¸¸é »õ·Î State ¸¸µé¾î¼­ Ãß°¡ÇØÁÜ
                 var state = fromState.Key.GetState(stateMachine, createdInstances);
                 states.Add(state);
 
-                // FromStateï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ToStatesï¿½ï¿½ï¿½ï¿½ï¿½ Trasitionsï¿½ï¿½ ï¿½Ì¾Æ³ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+                // FromState¿¡ ´ëÇÑ ¸ðµç ToStatesµé·ÎÀÇ TrasitionsÀ» »Ì¾Æ³»´Â °úÁ¤
                 transitions.Clear();
                 foreach (var transitionItem in fromState)
                 {
@@ -52,14 +52,14 @@ namespace Pudding.StateMachine.ScriptableObjects
             out StateCondition[] conditions,
             out int[] resultGroups)
         {
-            int count = conditionUsages.Length; // from ï¿½ï¿½ï¿½ï¿½ to ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ conditions ï¿½ï¿½ ï¿½ï¿½
+            int count = conditionUsages.Length; // from ¿¡¼­ to ·Î °¡´Â conditions ÀÇ ¼ö
 
-            // ï¿½ï¿½ transitionï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ conditionsï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Ì¾Æ³ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+            // ÇÑ transition¿¡ ´ëÇÑ conditionsµéÀ» ¸ðµÎ »Ì¾Æ³»´Â °úÁ¤
             conditions = new StateCondition[count];
             for (int i = 0; i < count; i++)
                 conditions[i] = conditionUsages[i].Condition.GetCondition(stateMachine, conditionUsages[i].ExpectedResult == Result.True, createdInstances);
 
-            // ï¿½Ì°Å´ï¿½ ï¿½ï¿½ï¿½ï¿½?? resultGroupsListï¿½ï¿½ ï¿½ï¿½Ã¼ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ì¾ï¿½ !!!!!
+            // ÀÌ°Å´Â ¹¹Áö?? resultGroupsListÀÇ Á¤Ã¼°¡ ¹¹³Æ ¸»ÀÌ¾ß !!!!!
             List<int> resultGroupsList = new List<int>();
             for (int i = 0; i < count; i++)
             {

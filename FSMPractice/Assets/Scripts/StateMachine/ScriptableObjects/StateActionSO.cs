@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace Pudding.StateMachine.ScriptableObjects
+namespace Test.StateMachine.ScriptableObjects
 {
 	public abstract class StateActionSO : DescriptionSMActionBaseSO
 	{

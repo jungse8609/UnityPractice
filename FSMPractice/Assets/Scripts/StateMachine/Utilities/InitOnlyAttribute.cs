@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Pudding.StateMachine
+namespace Test.StateMachine
 {
 	[AttributeUsage(AttributeTargets.Field)]
 	public class InitOnlyAttribute : PropertyAttribute { }

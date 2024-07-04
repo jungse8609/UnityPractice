@@ -11,6 +11,4 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1abf4cea051e7e41b1f07d6b6d87175, type: 3}
   m_Name: isPushing
-  m_Script: {fileID: 11500000, guid: be5ba9a3be4a0c946bc2063797d03586, type: 3}
-  m_Name: isPullingWall
   m_EditorClassIdentifier: 

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Pudding.StateMachine.ScriptableObjects
+namespace Test.StateMachine.ScriptableObjects
 {
     public abstract class StateConditionSO : ScriptableObject
     {

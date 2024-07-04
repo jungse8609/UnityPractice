@@ -1,9 +1,9 @@
 ﻿using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
-using Pudding.StateMachine.ScriptableObjects;
+using Test.StateMachine.ScriptableObjects;
 
-namespace Pudding.StateMachine.Editor
+namespace Test.StateMachine.Editor
 {
 	[CustomEditor(typeof(StateSO))]
 	public class StateEditor : UnityEditor.Editor

@@ -838,10 +838,6 @@
       <Project>{6601037A-C51C-F06C-492C-7D81DE214B58}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
-    <ProjectReference Include="Pudding.StateMachine.Editor.csproj">
-      <Project>{34621B57-3587-823B-FB19-248EA87B393F}</Project>
-      <Name>Pudding.StateMachine.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="Pudding.StateMachine.csproj">
       <Project>{C3CC2CF7-B6D4-A486-2A7E-6E6BB112F742}</Project>
       <Name>Pudding.StateMachine</Name>

@@ -1,7 +1,7 @@
-using Pudding.StateMachine.ScriptableObjects;
+using Test.StateMachine.ScriptableObjects;
 using UnityEngine;
 
-namespace Pudding.StateMachine
+namespace Test.StateMachine
 {
     public class State
     {

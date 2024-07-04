@@ -1,4 +1,4 @@
-namespace Pudding.StateMachine
+namespace Test.StateMachine
 {
     interface IStateComponent
     {

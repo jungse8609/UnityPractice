@@ -1,6 +1,6 @@
 using UnityEngine;
-using Pudding.StateMachine.ScriptableObjects;
-using Pudding.StateMachine;
+using Test.StateMachine.ScriptableObjects;
+using Test.StateMachine;
 
 [CreateAssetMenu(menuName = "State Machines/Conditions/Started Moving")]
 public class IsMovingConditionSO : StateConditionSO<IsMovingCondition>

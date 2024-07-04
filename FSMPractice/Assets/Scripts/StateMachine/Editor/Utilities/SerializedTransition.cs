@@ -1,6 +1,6 @@
 ﻿using UnityEditor;
 
-namespace Pudding.StateMachine.Editor
+namespace Test.StateMachine.Editor
 {
 	internal readonly struct SerializedTransition
 	{

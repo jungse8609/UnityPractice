@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
-using Pudding.StateMachine;
-using Pudding.StateMachine.ScriptableObjects;
+using Test.StateMachine;
+using Test.StateMachine.ScriptableObjects;
 
 [CreateAssetMenu(fileName = "isPullingLightCondition", menuName = "State Machines/Conditions/is Pulling Light Condition")]
 public class isPullingLightConditionSO : StateConditionSO<isPullingLightCondition> { }
@@ -16,9 +16,8 @@ public class isPullingLightCondition : Condition
 	
 	protected override bool Statement()
 	{
-		if (_interactionManager.currentInteractionType == InteractionType.Light) {
+		if (_interactionManager.currentInteractionType == InteractionType.Light)
 			return true;
-		}
 		return false;
 	}
 }

@@ -1,7 +1,7 @@
 ﻿using UnityEditor;
 using UnityEngine;
 
-namespace Pudding.StateMachine.Editor
+namespace Test.StateMachine.Editor
 {
 	internal static class ContentStyle
 	{

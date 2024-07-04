@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
-using Pudding.StateMachine;
-using Pudding.StateMachine.ScriptableObjects;
+using Test.StateMachine;
+using Test.StateMachine.ScriptableObjects;
 
 [CreateAssetMenu(fileName = "DescendAction", menuName = "State Machines/Actions/Descend Action")]
 public class DescendActionSO : StateActionSO<DescendAction> { }
